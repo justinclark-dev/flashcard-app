@@ -1,0 +1,187 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dialog {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.closeButton:hover {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.fileInput {
+  margin-bottom: 1.5rem;
+}
+
+.fileLabel {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent-primary);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  margin-bottom: 1rem;
+}
+
+.fileLabel:hover {
+  background: var(--primary-color-hover);
+}
+
+.fileInputElement {
+  display: none;
+}
+
+.fileInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: var(--bg-secondary);
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+.fileName {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.fileSize {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.help {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border-radius: 4px;
+}
+
+.help p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--border-primary);
+}
+
+.cancelButton,
+.importButton {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--border-primary);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cancelButton {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.cancelButton:hover {
+  background: var(--bg-tertiary);
+}
+
+.importButton {
+  background: var(--accent-primary);
+  color: white;
+  border-color: var(--accent-primary);
+}
+
+.importButton:hover:not(:disabled) {
+  background: var(--primary-color-hover);
+  border-color: var(--primary-color-hover);
+}
+
+.importButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+

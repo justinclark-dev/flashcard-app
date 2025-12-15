@@ -1,0 +1,104 @@
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.form h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.field {
+  margin-bottom: 1rem;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.field input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.field input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.fieldError {
+  display: block;
+  color: #c33;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.passwordStrength {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.passwordStrength .weak {
+  color: #c33;
+  font-weight: 500;
+}
+
+.passwordStrength .medium {
+  color: #fa0;
+  font-weight: 500;
+}
+
+.passwordStrength .strong {
+  color: #3c3;
+  font-weight: 500;
+}
+
+.error {
+  padding: 0.75rem;
+  background-color: #fee;
+  color: #c33;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+

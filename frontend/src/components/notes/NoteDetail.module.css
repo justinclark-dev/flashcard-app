@@ -1,0 +1,148 @@
+.noteDetail {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.backLink {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.backLink:hover {
+  color: var(--primary-color);
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.editButton,
+.deleteButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s;
+}
+
+.editButton {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.editButton:hover {
+  background-color: var(--primary-hover);
+}
+
+.deleteButton {
+  background-color: var(--error-bg);
+  color: var(--error-text);
+}
+
+.deleteButton:hover {
+  background-color: var(--error-hover);
+}
+
+.content {
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.meta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.category {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  color: white;
+  font-weight: 500;
+}
+
+.date {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  padding: 0.25rem 0.75rem;
+  background-color: var(--bg-tertiary);
+  border-radius: 12px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.body {
+  margin-bottom: 1.5rem;
+}
+
+.textContent {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.source {
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.source a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.source a:hover {
+  text-decoration: underline;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-secondary);
+}
+
+.error {
+  color: var(--error-text);
+}
+

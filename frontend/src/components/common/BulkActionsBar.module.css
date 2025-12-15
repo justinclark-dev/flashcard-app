@@ -1,0 +1,67 @@
+.bulkActionsBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.selectedInfo {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.actionButton {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-primary);
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.actionButton.primary {
+  background: var(--accent-primary);
+  color: white;
+  border-color: var(--accent-primary);
+}
+
+.actionButton.primary:hover {
+  background: var(--primary-color-hover);
+  border-color: var(--primary-color-hover);
+}
+
+.actionButton.secondary {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.actionButton.secondary:hover {
+  background: var(--bg-tertiary);
+}
+
+.actionButton.danger {
+  background: var(--error-primary);
+  color: white;
+  border-color: var(--error-primary);
+}
+
+.actionButton.danger:hover {
+  background: var(--error-color);
+  border-color: var(--error-color);
+  opacity: 0.9;
+}
+
